@@ -8,6 +8,7 @@ import { map } from 'rxjs/operators';
 export class CartService {
   public cartItemList: any = [];
   public productList = new BehaviorSubject<any>([]);
+  public search = new BehaviorSubject<string>('');
 
   constructor() {}
 

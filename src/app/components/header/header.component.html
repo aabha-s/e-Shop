@@ -4,7 +4,13 @@
       <i style="font-size: 20px" class="fas fa-store"> </i>
       <strong class="eshop">ESHOP</strong>
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search Products" />
+        <input
+          type="text"
+          class="form-control"
+          [(ngModel)]="searchTerm"
+          (keyup)="search($event)"
+          placeholder="Search Products"
+        />
       </div>
       <span class="fas fa-search search-icon"></span>
     </div>
