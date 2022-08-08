@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FilterPipe } from './pipes/filter.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AddDetailsComponent } from './components/add-details/add-details.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CartComponent,
     ProductComponent,
     FilterPipe,
+    AddDetailsComponent,
   ],
   imports: [
     BrowserModule,
